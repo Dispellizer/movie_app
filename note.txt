@@ -39,3 +39,7 @@ class react component는 function이 아니기 때문에 return을 가지고 있
 react는 자동적으로 class component의 render method를 실행한다.
 
 class component를 사용하는 이유는 state를 쓰기 위해서이다.
+
+setState를 호출할때마다 react는 새로운 state와 함께 render function을 호출한다.
+setState를 사용하지 않으면 새 state와 함께 render function이 호출되지 않는다.
+setState를 사용하지 않고 직접 바꾸면 render function이 호출안됨.
