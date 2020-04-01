@@ -43,3 +43,17 @@ class component를 사용하는 이유는 state를 쓰기 위해서이다.
 setState를 호출할때마다 react는 새로운 state와 함께 render function을 호출한다.
 setState를 사용하지 않으면 새 state와 함께 render function이 호출되지 않는다.
 setState를 사용하지 않고 직접 바꾸면 render function이 호출안됨.
+
+Component Life Cycle
+
+mounting
+component가 mount될때, component가 screen에 표시될때 component가 너의 website에 갈때
+constructor를 호출한다.
+component가 render할때 componentDidMount를 호출한다.
+
+upadting
+add, minus버튼을 클릭해서 state를 변경할때, 그게 바로 updating이다.
+setState를 호출하면,
+render을 호출 한 다음 업데이트가 완료되면 componentDidUpdate가 실행된다.
+unmounting
+componentWillUnmount 페이지를 떠나거나 다른 페이지로 갈때 호출
