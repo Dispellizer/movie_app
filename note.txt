@@ -65,3 +65,14 @@ state가 없다면 class component가 아니라 function component를 사용해�
 
 genres: PropTypes.arrayOf(PropTypes.string).isRequired
 //  arrayOf는 PropTypes에서 제공하는 함수, 해상 PropTypes로 구성된 배열
+
+gh page에 올리기
+npm i gh-pages
+
+package.json에서 "homepage": "https://dispellizer.github.io/movie_app/" 입력
+script부분 작성하기
+"deploy": "gh-pages -d build",
+"predeploy": "npm run build"
+predeploy는 deploy를 입력하면 알아서 실행됨
+
+파일을 수정하면 다시 npm start deploy 해줘야함
