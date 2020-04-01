@@ -14,5 +14,15 @@ react는 jsx를 사용한다.
 component는 html을 반환하는 함수이다.
 react application은 한번에 하나의 component만 rendering 할수있다.
 
-상위component에서 하위component로 props를 전달할 수 있다.
+상위component에서 하위component로 props(property)를 전달할 수 있다.
 react masic을 사용하여 전달한 props를 사용한다.
+
+map
+
+const arr = ["aa", "bb", "cc", "dd"]
+
+arr.map((alpha) => {
+    return alpha + "★"
+})
+
+["aa★", "bb★", "cc★", "dd★"]
