@@ -55,5 +55,8 @@ upadting
 add, minus버튼을 클릭해서 state를 변경할때, 그게 바로 updating이다.
 setState를 호출하면,
 render을 호출 한 다음 업데이트가 완료되면 componentDidUpdate가 실행된다.
+
 unmounting
 componentWillUnmount 페이지를 떠나거나 다른 페이지로 갈때 호출
+
+componentDidMount에서 data를 fetch할 예정
