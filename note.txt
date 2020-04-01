@@ -62,3 +62,6 @@ componentWillUnmount 페이지를 떠나거나 다른 페이지로 갈때 호출
 componentDidMount에서 data를 fetch할 예정
 
 state가 없다면 class component가 아니라 function component를 사용해도 된다.
+
+genres: PropTypes.arrayOf(PropTypes.string).isRequired
+//  arrayOf는 PropTypes에서 제공하는 함수, 해상 PropTypes로 구성된 배열
