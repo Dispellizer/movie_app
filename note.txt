@@ -26,3 +26,11 @@ arr.map((alpha) => {
 })
 
 ["aa★", "bb★", "cc★", "dd★"]
+
+prop-types
+내가 전달받은 props가 내가 원하는 props인지 확인해주는것
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.number
+};
