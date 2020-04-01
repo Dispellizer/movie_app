@@ -34,3 +34,8 @@ Food.propTypes = {
   picture: PropTypes.string.isRequired,
   rating: PropTypes.number
 };
+
+class react component는 function이 아니기 때문에 return을 가지고 있지 않다.
+react는 자동적으로 class component의 render method를 실행한다.
+
+class component를 사용하는 이유는 state를 쓰기 위해서이다.
