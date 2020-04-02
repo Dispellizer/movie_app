@@ -115,3 +115,5 @@ history, location, math, staticContext
 location에서 state 확인 가능
 
 movie-detail을 link를 통해서 들어가지 않고 url로 들어가면 state가 undifined됨
+history.push("/");
+을 통하여 redirection할수 있다.
