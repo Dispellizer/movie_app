@@ -80,3 +80,19 @@ predeploy는 deploy를 입력하면 알아서 실행됨
 파일을 수정하면 다시 npm start deploy 해줘야함
 
 npm i react-router-dom
+
+<HashRouter>
+  <Navigation />
+  <Route path="/" exact={true} component={Home} />
+  <Route path="/about" component={About} />
+</HashRouter>
+exact는 이거 아니면 랜더링 안한다는 의미
+
+<Link to="/">Home</Link>
+<Link to="/about">About</Link>
+<a href="/">Home</a>를 spa 사용을 위해 Link로 해줌
+route의 path와 같아야 한다.
+
+Link를 사용할려면 router 안에 넣어야 된다.
+HashRouter를 사용하면 주소에#가 생기지만, BrowserRouter를 사용하면 없다.
+BrowserRouter를 쓰면 gh-pages에 업로드할때 귀찮아진다.
