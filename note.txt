@@ -1,6 +1,8 @@
 react project는 npx create-react-app을 통해 생성가능
 babel, webpack이 다 내장되어있음
 
+npx create-react-app 프로젝트명
+
 git init
 git add .
 git remote add origin url
@@ -27,7 +29,7 @@ arr.map((alpha) => {
 
 ["aa★", "bb★", "cc★", "dd★"]
 
-prop-types
+npm i prop-types
 내가 전달받은 props가 내가 원하는 props인지 확인해주는것
 Food.propTypes = {
   name: PropTypes.string.isRequired,
@@ -76,3 +78,5 @@ script부분 작성하기
 predeploy는 deploy를 입력하면 알아서 실행됨
 
 파일을 수정하면 다시 npm start deploy 해줘야함
+
+npm i react-router-dom
