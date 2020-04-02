@@ -96,3 +96,20 @@ route의 path와 같아야 한다.
 Link를 사용할려면 router 안에 넣어야 된다.
 HashRouter를 사용하면 주소에#가 생기지만, BrowserRouter를 사용하면 없다.
 BrowserRouter를 쓰면 gh-pages에 업로드할때 귀찮아진다.
+
+route가 기본적으로 보내주는 props가 있다.
+history, location, math, staticContext
+    <Link
+      to={{
+        pathname: "/movie-detail",
+        state: {
+          year,
+          title,
+          summary,
+          poster,
+          genres
+        }
+      }}
+    >
+위와 같은식으로 link to object가 가능(obj를 넣어줄수도 있다.)
+location에서 state 확인 가능
